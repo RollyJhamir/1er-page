@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora, Fecha y Ubicación</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hora, Fecha y Ubicación Actual</h1>
+        <div class="info-card">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <div class="details">
+                <p id="time">Cargando hora...</p>
+                <p id="date">Cargando fecha...</p>
+            </div>
+        </div>
+        <div class="info-card">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="details">
+                <p id="latitude">Cargando latitud...</p>
+                <p id="longitude">Cargando longitud...</p>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Cargar la API de Google Maps -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap">
+    </script>
+</body>
+</html>
